@@ -8,70 +8,20 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 
 ## 🧠 Các thuật toán được triển khai
 
-| Thuật toán | Mô tả ngắn |
-|------------|------------|
-| 🔍 **Breadth-First Search (BFS)** | Duyệt theo từng lớp, đảm bảo tìm được lời giải tối ưu nếu tồn tại. |
-| 🧗‍♂️ **Depth-First Search (DFS)** | Duyệt theo chiều sâu, dễ bị mắc kẹt nếu không giới hạn độ sâu. |
-| 💰 **Uniform Cost Search (UCS)** | Luôn mở rộng nút có chi phí thấp nhất đến hiện tại. |
-| ⬇️ **Iterative Deepening DFS (IDDFS)** | Kết hợp ưu điểm của DFS và BFS bằng cách tăng dần độ sâu duyệt. |
-| 🎯 **Greedy Best-First Search** | Mở rộng nút có giá trị heuristic nhỏ nhất. |
-| ✨ **ASTAR** | Kết hợp giữa chi phí đi và ước lượng còn lại để tìm lời giải tối ưu. |
-| 🔁 **IDASTAR** | Phiên bản lặp lại của A\\*, dùng ít bộ nhớ hơn. |
-| ⛰ **Simple Hill Climbing** | Luôn chọn trạng thái con tốt hơn trạng thái hiện tại. |
-| ⛰⛰ **Steepest Hill Climbing** | Chọn trạng thái con tốt nhất trong tất cả các trạng thái lân cận. |
-| 🎲 **Stochastic Hill Climbing** | Chọn ngẫu nhiên trong các trạng thái lân cận tốt hơn. |
-| 🔥 **Simulated Annealing** | Chấp nhận trạng thái kém hơn với xác suất, để tránh kẹt cực trị địa phương. |
-| 🌈 **Beam Search** | Giới hạn số lượng nút được giữ lại tại mỗi bước (theo heuristic). |
-
----
-
-### ✅ Cài đặt
-```bash
-git clone https://github.com/finntranne/TranHuuThoai_23110334_DoAnCaNhanTriTueNhanTao_8_puzzle.git
-cd TranHuuThoai_23110334_DoAnCaNhanTriTueNhanTao_8_puzzle
-python main.py
-...
-
----
-
-## 🚀 Demo GIFs
-
-### Breadth-First Search (BFS)
-![Breadth-First Search (BFS)](images/bfs.gif)
-
-### Depth-First Search (DFS)
-![Depth-First Search (DFS)](images/dfs.gif)
-
-### Uniform Cost Search (UCS)
-![Uniform Cost Search (UCS)](images/ucs.gif)
-
-### Iterative Deepening DFS (IDDFS)
-![Iterative Deepening DFS (IDDFS)](images/iddfs.gif)
-
-### Greedy
-![Greedy](images/greedy.gif)
-
-### ASTAR
-![ASTAR](images/astar.gif)
-
-### IDA\\*
-![IDASTAR](images/idastar.gif)
-
-### Simple Hill Climbing
-![Simple Hill Climbing](images/simplehillclimbing.gif)
-
-### Steepest Hill Climbing
-![Steepest Hill Climbing](images/steepesthillclimbing.gif)
-
-### Stochastic Hill Climbing
-![Stochastic Hill Climbing](images/stochastichillclimbing.gif)
-
-### Simulated Annealing
-![Simulated Annealing](images/simulatedannealing.gif)
-
-### Beam Search
-![Beam Search](images/beamsearch.gif)
----
+| Thuật Toán               | Mô Tả                                                                 | Minh Hóa GIF                              |
+|--------------------------|----------------------------------------------------------------------|-------------------------------------------|
+| **Breadth-First Search (BFS)** | Tìm kiếm theo chiều rộng, đảm bảo đường đi ngắn nhất.             | ![BFS](images/bfs.gif)                   |
+| **Depth-First Search (DFS)**   | Tìm kiếm theo chiều sâu, có thể không tìm được đường ngắn nhất.    | ![DFS](images/dfs.gif)                   |
+| **Uniform Cost Search (UCS)**  | Tìm kiếm dựa trên chi phí, tương tự BFS nhưng với trọng số.        | ![UCS](images/ucs.gif)                   |
+| **Iterative Deepening DFS (IDDFS)** | Kết hợp DFS và giới hạn độ sâu, hiệu quả hơn DFS.                 | ![IDDFS](images/iddfs.gif)               |
+| **Greedy Best-First Search**   | Sử dụng heuristic để ưu tiên trạng thái hứa hẹn nhất.             | ![GREEDY](images/greedy.gif)             |
+| **A* Search**                 | Kết hợp chi phí và heuristic, tìm đường ngắn nhất hiệu quả.        | ![A*](images/astar.gif)                  |
+| **IDA* Search**               | Phiên bản tối ưu của A* với giới hạn chi phí.                     | ![IDA*](images/ida_star.gif)             |
+| **Simple Hill Climbing**       | Leo dốc đơn giản, dễ kẹt ở cực trị cục bộ.                       | ![Simple HC](images/simple_hc.gif)       |
+| **Steepest Hill Climbing**     | Kiểm tra tất cả lân cận, chọn tốt nhất, nhưng vẫn có thể kẹt.     | ![Steepest HC](images/steepest_hc.gif)   |
+| **Stochastic Hill Climbing**   | Leo dốc ngẫu nhiên, tránh cực trị cục bộ tốt hơn.                | ![Stochastic HC](images/stochastic_hc.gif) |
+| **Simulated Annealing**        | Sử dụng nhiệt độ để chấp nhận giải pháp xấu, tìm giải toàn cục.    | ![Simulated Annealing](images/sa.gif)    |
+| **Beam Search**                | Tìm kiếm chùm, giữ lại một số lượng cố định trạng thái tốt nhất.   | ![Beam Search](images/beam_search.gif)   |
 
 ## 👨‍💻 Tác giả
 
