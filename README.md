@@ -15,8 +15,8 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 | 💰 **Uniform Cost Search (UCS)** | Luôn mở rộng nút có chi phí thấp nhất đến hiện tại. |
 | ⬇️ **Iterative Deepening DFS (IDDFS)** | Kết hợp ưu điểm của DFS và BFS bằng cách tăng dần độ sâu duyệt. |
 | 🎯 **Greedy Best-First Search** | Mở rộng nút có giá trị heuristic nhỏ nhất. |
-| ✨ **A\\*** | Kết hợp giữa chi phí đi và ước lượng còn lại để tìm lời giải tối ưu. |
-| 🔁 **IDA\\*** | Phiên bản lặp lại của A\\*, dùng ít bộ nhớ hơn. |
+| ✨ **ASTAR** | Kết hợp giữa chi phí đi và ước lượng còn lại để tìm lời giải tối ưu. |
+| 🔁 **IDASTAR** | Phiên bản lặp lại của A\\*, dùng ít bộ nhớ hơn. |
 | ⛰ **Simple Hill Climbing** | Luôn chọn trạng thái con tốt hơn trạng thái hiện tại. |
 | ⛰⛰ **Steepest Hill Climbing** | Chọn trạng thái con tốt nhất trong tất cả các trạng thái lân cận. |
 | 🎲 **Stochastic Hill Climbing** | Chọn ngẫu nhiên trong các trạng thái lân cận tốt hơn. |
@@ -30,6 +30,8 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 git clone https://github.com/finntranne/TranHuuThoai_23110334_DoAnCaNhanTriTueNhanTao_8_puzzle.git
 cd TranHuuThoai_23110334_DoAnCaNhanTriTueNhanTao_8_puzzle
 python main.py
+...
+
 ---
 
 ## 🚀 Demo GIFs
@@ -49,11 +51,11 @@ python main.py
 ### Greedy
 ![Greedy](images/greedy.gif)
 
-### A\\*
-![A\\*](images/astar.gif)
+### ASTAR
+![ASTAR](images/astar.gif)
 
 ### IDA\\*
-![IDA\\*](images/idastar.gif)
+![IDASTAR](images/idastar.gif)
 
 ### Simple Hill Climbing
 ![Simple Hill Climbing](images/simplehillclimbing.gif)
