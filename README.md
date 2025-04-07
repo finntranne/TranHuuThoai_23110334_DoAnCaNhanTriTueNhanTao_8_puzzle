@@ -5,6 +5,7 @@
 Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhiều thuật toán tìm kiếm khác nhau trong lĩnh vực Trí tuệ nhân tạo.
 
 ---
+
 ## 🧠 Các thuật toán được triển khai
 
 | Thuật Toán               | Mô Tả                                                                 | Minh Hóa GIF                              |
@@ -24,8 +25,9 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 
 ## 👨‍💻 Tác giả
 
-**Trần Hưu Thoại**  
+**Trần Hữu Thoại**  
 MSSV: `23110334`  
 Môn: `Trí Tuệ Nhân Tạo`
 Giáo viên hướng dẫn: `Phan Thị Huyền Trang` 
+
 ---
