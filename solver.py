@@ -259,28 +259,21 @@ class PuzzleSolver:
     def stochasticHillClimbing(self, start):
         if not self.check(start) or self.desState is None:
             return []
-
         current_state = self.copy_state(start)
         path = []
         visited = set()
-
         while True:
             if self.are_states_equal(current_state, self.desState):
                 return path
-
             current_tuple = tuple(self.flatten(current_state))
             if current_tuple in visited:
                 return []
             visited.add(current_tuple)
-
             neighbors = self.newStates(current_state)
             if not neighbors:
                 return []
-
-            # Trộn danh sách trạng thái con để xét ngẫu nhiên
             random.shuffle(neighbors)
             found_better = False
-
             for neighbor in neighbors:
                 neighbor_heuristic = self.manhattan_distance(neighbor)
                 current_heuristic = self.manhattan_distance(current_state)
@@ -289,10 +282,9 @@ class PuzzleSolver:
                     current_state = self.copy_state(neighbor)
                     path.append(self.copy_state(current_state))
                     found_better = True
-                    break  # chuyển sang vòng lặp tiếp theo với trạng thái mới
-
+                    break
             if not found_better:
-                return []  # Không còn trạng thái nào tốt hơn
+                return [] 
 
 
     def simulatedAnnealing(self, start, max_restarts=10):
@@ -301,35 +293,27 @@ class PuzzleSolver:
 
         for attempt in range(max_restarts):
             current_state = self.copy_state(start)
-            path = [self.copy_state(current_state)]  # Lưu lại đường đi
-            temperature = 500                   # Nhiệt độ ban đầu cao hơn
-            cooling_rate = 0.99                    # Làm nguội từ từ
+            path = [self.copy_state(current_state)]  
+            temperature = 1000                 
+            cooling_rate = 0.99               
             min_temperature = 0.01
-
             while temperature > min_temperature:
                 if self.are_states_equal(current_state, self.desState):
                     return path
-
                 neighbors = self.newStates(current_state)
                 if not neighbors:
-                    break  # hết đường đi
-
-                # Chọn ngẫu nhiên trong số các neighbor tốt hơn một chút
+                    break  
                 neighbors.sort(key=lambda s: self.manhattan_distance(s))
                 next_state = random.choice(neighbors[:3]) if len(neighbors) >= 3 else random.choice(neighbors)
 
                 current_value = self.manhattan_distance(current_state)
                 next_value = self.manhattan_distance(next_state)
-                delta_e = current_value - next_value  # Đảo chiều để tối ưu hóa
-
+                delta_e = current_value - next_value 
                 if delta_e > 0 or random.uniform(0, 1) < math.exp(delta_e / temperature):
                     current_state = self.copy_state(next_state)
                     path.append(self.copy_state(current_state))
-
                 temperature *= cooling_rate
-
-            # Nếu chưa đến đích thì thử lại từ đầu
-        return []  # Sau max_restarts vẫn không thành công
+        return []
 
 
     def beamSearch(self, start, beam_width=2):
