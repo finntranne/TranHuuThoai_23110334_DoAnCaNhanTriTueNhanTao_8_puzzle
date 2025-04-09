@@ -254,7 +254,6 @@ class PuzzleSolver:
             current_state = self.copy_state(best_neighbor)
             path.append(self.copy_state(current_state))
 
-    import random
 
     def stochasticHillClimbing(self, start):
         if not self.check(start) or self.desState is None:
