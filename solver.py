@@ -150,7 +150,7 @@ class PuzzleSolver:
         heapq.heappush(open, (self.manhattan_distance(start), 0, start, []))
         close = set([tuple(self.flatten(start))])
         while open:
-            f, g, state, path = heapq.heappop(open)
+            h, g, state, path = heapq.heappop(open)
             if not self.is_valid_state(state):
                 continue
             if self.are_states_equal(state, self.desState):

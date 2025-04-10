@@ -177,7 +177,7 @@ class PuzzleApp:
 
     def on_speed_change(self, value):
         value = float(value)
-        if value == 10:
+        if value == 100:
             self.speed = 0
             final_speed = "Skip"
         else:
