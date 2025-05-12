@@ -434,13 +434,7 @@ class PuzzleApp:
             self.execution_time = end_time - start_time
             self.execution_time_label.config(text=f"Time: {self.execution_time:}s")
             if steps:
-                # Chỉ thêm self.state vào đầu danh sách steps nếu không phải CSP và self.state không phải None
-                if algorithm not in csp_algorithms and self.state is not None:
-                    self.solution_steps = [copy.deepcopy(self.state)] + steps
-                else:
-                    self.solution_steps = steps  # Với CSP, sử dụng trực tiếp steps
-
-                # Loại bỏ các trạng thái trùng lặp
+                self.solution_steps = [copy.deepcopy(self.state)] + steps
                 seen_states = set()
                 unique_steps = []
                 for step in self.solution_steps:
@@ -449,7 +443,6 @@ class PuzzleApp:
                         unique_steps.append(step)
                         seen_states.add(step_tuple)
                 self.solution_steps = unique_steps
-
                 self.log_text.insert(tk.END, f"Đã tìm thấy lời giải bằng {algorithm}!\n")
                 self.log_text.insert(tk.END, f"Thời gian thực thi: {self.execution_time:} giây\n")
                 total_steps = len(self.solution_steps)
