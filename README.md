@@ -36,7 +36,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
 |-----------|-----------------------|----------------|
-| <img src="execution_time_uninformed_search.png" width="300" alt="Time"> | <img src="visited_states_uninformed_search.png" width="300" alt="Visited States"> | <img src="memory_usage_uninformed_search.png" width="300" alt="Memory"> |
+| <img src="images/execution_time_uninformed_search.png" width="300" alt="Time"> | <img src="images/visited_states_uninformed_search.png" width="300" alt="Visited States"> | <img src="images/memory_usage_uninformed_search.png" width="300" alt="Memory"> |
 
 #### Nhận xét về hiệu suất
 - **BFS**: Đảm bảo tìm được đường ngắn nhất nhưng tốn nhiều bộ nhớ do lưu trữ tất cả trạng thái ở mỗi mức độ sâu. Phù hợp khi không gian trạng thái không quá lớn.
