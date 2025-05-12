@@ -202,10 +202,11 @@ Dự án đã đạt được các kết quả sau:
 
 ## Tài liệu tham khảo:
 
--**1**: Russell 2016 Artificial intelligence a modern approach
--**2**: Scaler Topics: https://www.scaler.com/topics/artificial-intelligence-tutorial
--**3**: Geeksforgeeks: https://www.geeksforgeeks.org/q-learning-in-python/
+1. Russell, S., & Norvig, P. (2016). Artificial Intelligence: A Modern Approach (3rd ed.). Pearson.
+2. Scaler Topics. (n.d.). Artificial Intelligence Tutorial. Retrieved from https://www.scaler.com/topics/artificial-intelligence-tutorial
+3. GeeksforGeeks. (n.d.). Q-Learning in Python. Retrieved from https://www.geeksforgeeks.org/q-learning-in-python
 
+---
 
 ## 👨‍💻 Tác giả
 **Trần Hữu Thoại**  
