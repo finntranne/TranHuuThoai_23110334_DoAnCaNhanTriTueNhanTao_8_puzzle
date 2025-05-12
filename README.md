@@ -62,7 +62,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
 |-----------|-----------------------|----------------|
-| <img src="execution_time_informed_search.png" width="300" alt="Time"> | <img src="visited_states_informed_search.png" width="300" alt="Visited States"> | <img src="memory_usage_informed_search.png" width="300" alt="Memory"> |
+| <img src="images/execution_time_informed_search.png" width="300" alt="Time"> | <img src="images/visited_states_informed_search.png" width="300" alt="Visited States"> | <img src="images/memory_usage_informed_search.png" width="300" alt="Memory"> |
 
 #### Nhận xét về hiệu suất
 - **GREEDY**: Nhanh nhưng không đảm bảo đường đi ngắn nhất, dễ bị kẹt ở các trạng thái không tối ưu do chỉ dựa vào heuristic.
@@ -90,7 +90,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
 |-----------|-----------------------|----------------|
-| <img src="execution_time_local_search.png" width="300" alt="Time"> | <img src="visited_states_local_search.png" width="300" alt="Visited States"> | <img src="memory_usage_local_search.png" width="300" alt="Memory"> |
+| <img src="images/execution_time_local_search.png" width="300" alt="Time"> | <img src="images/visited_states_local_search.png" width="300" alt="Visited States"> | <img src="images/memory_usage_local_search.png" width="300" alt="Memory"> |
 
 #### Nhận xét về hiệu suất
 - **SimpleHillClimbing**: Nhanh nhưng dễ kẹt ở cực trị cục bộ, không phù hợp với các bài toán có không gian trạng thái phức tạp.
@@ -139,7 +139,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
 |-----------|-----------------------|----------------|
-| <img src="execution_time_csp.png" width="300" alt="Time"> | <img src="visited_states_csp.png" width="300" alt="Visited States"> | <img src="memory_usage_csp.png" width="300" alt="Memory"> |
+| <img src="images/execution_time_csp.png" width="300" alt="Time"> | <img src="images/visited_states_csp.png" width="300" alt="Visited States"> | <img src="images/memory_usage_csp.png" width="300" alt="Memory"> |
 
 #### Nhận xét về hiệu suất
 - **Backtracking**: Hiệu quả trong việc tìm giải pháp CSP, nhưng có thể chậm nếu không gian trạng thái lớn.
@@ -162,7 +162,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
 |-----------|-----------------------|----------------|
-| <img src="execution_time_optimization_based.png" width="300" alt="Time"> | <img src="visited_states_optimization_based.png" width="300" alt="Visited States"> | <img src="memory_usage_optimization_based.png" width="300" alt="Memory"> |
+| <img src="images/execution_time_optimization_based.png" width="300" alt="Time"> | <img src="images/visited_states_optimization_based.png" width="300" alt="Visited States"> | <img src="images/memory_usage_optimization_based.png" width="300" alt="Memory"> |
 
 #### Nhận xét về hiệu suất
 - **Q-Learning**: Tốn thời gian để huấn luyện do cần nhiều tập học, nhưng có thể áp dụng cho các bài toán mà không cần mô hình rõ ràng. Phù hợp hơn cho các bài toán lớn hoặc không xác định.
