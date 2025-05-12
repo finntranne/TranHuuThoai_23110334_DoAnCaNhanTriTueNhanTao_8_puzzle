@@ -7,13 +7,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def get_fixed_test_case():
-    # Trạng thái ban đầu cố định
     return [[1, 8, 2], [0, 4, 3], [7, 6, 5]]
 
 def evaluate_algorithms(test_state, algorithms, num_runs=10):
     results = {alg: {"time": [], "visited": [], "memory": []} for alg in algorithms}
     
-    for _ in range(num_runs):  # Chạy nhiều lần để lấy trung bình
+    for _ in range(num_runs):
         solver = PuzzleSolver(desState=[[1, 2, 3], [4, 5, 6], [7, 8, 0]])
         for alg in algorithms:
             start_time = perf_counter()
@@ -60,7 +59,7 @@ def save_to_csv(results, filename="algorithm_performance_fixed.csv"):
 
 def plot_performance_group(group, algorithms, results, metric, title, ylabel, filename):
     values = [results[alg][f"avg_{metric}"] for alg in algorithms if alg in results]
-    if not values:  # Bỏ qua nếu nhóm không có thuật toán
+    if not values:
         return
     
     plt.figure(figsize=(8, 6))
@@ -88,12 +87,10 @@ if __name__ == "__main__":
     test_state = get_fixed_test_case()
     results = evaluate_algorithms(test_state, algorithms, num_runs=10)
     
-    # Lưu vào CSV
+
     save_to_csv(results)
     
-    # Vẽ biểu đồ riêng cho từng nhóm
     for group, algs in algorithm_groups.items():
-        # Biểu đồ thời gian
         plot_performance_group(
             group, algs, results, 
             "time", 
@@ -101,7 +98,6 @@ if __name__ == "__main__":
             "Time (seconds)", 
             f"execution_time_{group.lower().replace(' ', '_')}.png"
         )
-        # Biểu đồ số trạng thái đã thăm
         plot_performance_group(
             group, algs, results, 
             "visited", 
@@ -109,7 +105,6 @@ if __name__ == "__main__":
             "Visited States", 
             f"visited_states_{group.lower().replace(' ', '_')}.png"
         )
-        # Biểu đồ bộ nhớ
         plot_performance_group(
             group, algs, results, 
             "memory", 
@@ -118,7 +113,6 @@ if __name__ == "__main__":
             f"memory_usage_{group.lower().replace(' ', '_')}.png"
         )
     
-    # In kết quả
     for group, algs in algorithm_groups.items():
         print(f"\nNhóm: {group}")
         for alg in algs:

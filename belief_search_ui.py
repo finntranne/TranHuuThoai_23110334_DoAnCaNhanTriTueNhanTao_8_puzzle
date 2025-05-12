@@ -4,11 +4,9 @@ import random
 import logging
 from solver import PuzzleSolver
 
-# Cấu hình logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# FPS and timing
 FPS = 60
 
 # Display settings
@@ -75,15 +73,12 @@ class BeliefSearchUI:
         attempts = 0
         seen_states = set()
 
-        # Định nghĩa trạng thái đích để so sánh
         des_state_tuple = tuple(tuple(row) for row in self.des_state)
 
         if self.algorithm == "PartialObservationSearch":
-            # Khởi tạo cho PartialObservationSearch
             initial_state = self.solver.copy_state(self.actual_state) if self.actual_state else self.solver.copy_state(self.des_state)
             state_tuple = tuple(tuple(row) for row in initial_state)
 
-            # Kiểm tra nếu initial_state là trạng thái đích, thay thế bằng trạng thái khác
             if state_tuple == des_state_tuple:
                 initial_state = self.generate_valid_state(seen_states, des_state_tuple)
                 state_tuple = tuple(tuple(row) for row in initial_state)
@@ -131,13 +126,12 @@ class BeliefSearchUI:
                     logger.debug(f"Generated state invalid, unsolvable, or mismatched observations: {current_state}")
                 attempts += 1
 
-            # Đảm bảo actual_state không phải là trạng thái đích
             if state_tuple == des_state_tuple:
                 logger.error("actual_state không được là trạng thái đích, tạo trạng thái mới.")
                 initial_state = self.generate_valid_state(seen_states, des_state_tuple)
             self.actual_state = initial_state
 
-            # Đảm bảo actual_state nằm trong belief_set
+
             if not any(self.solver.are_states_equal(initial_state, s) for s in self.belief_set):
                 self.belief_set[0] = initial_state
                 seen_states.add(tuple(tuple(row) for row in initial_state))
@@ -222,9 +216,8 @@ class BeliefSearchUI:
                 return current_state
             attempts += 1
         
-        # Nếu không tạo được, trả về một trạng thái mặc định khác trạng thái đích
         logger.warning("Could not generate a valid state, using fallback state.")
-        return [[1, 2, 3], [4, 0, 5], [7, 8, 6]]  # Trạng thái mặc định khác trạng thái đích
+        return [[1, 2, 3], [4, 0, 5], [7, 8, 6]]
 
     def draw_belief_states(self, title_text):
         self.screen.fill(WHITE)
@@ -300,7 +293,6 @@ class BeliefSearchUI:
                     logger.debug(f"State {idx} marked as immovable.")
                     continue
 
-                # Lọc dựa trên ô quan sát
                 matches_observation = True
                 for i, j in self.observed_positions:
                     if new_state[i][j] != self.actual_state[i][j]:
@@ -364,11 +356,9 @@ class BeliefSearchUI:
             scored_states.sort(key=lambda x: (-x[0], x[1]))
             best_state = scored_states[0][2]
         else:
-            # NoObservationSearch: Chọn trạng thái có heuristic tốt nhất
             movable_states.sort(key=lambda s: self.solver.manhattan_distance(s))
             best_state = movable_states[0]
 
-        # Thử A* để tìm hành động
         astar_path = self.solver.astar(best_state)
         if astar_path and len(astar_path) > 1:
             next_state = astar_path[1]
@@ -408,13 +398,10 @@ class BeliefSearchUI:
         self.current_action = best_action
         logger.info(f"Applying action: {self.current_action}")
 
-        # Cập nhật belief_set
         self.update_belief_set(best_action)
 
-        # Kiểm tra trạng thái đích
         goal_reached = False
         for idx, state in enumerate(self.belief_set):
-            # Kiểm tra trạng thái đích hoàn toàn cho cả hai thuật toán
             if self.solver.are_states_equal(state, self.des_state):
                 self.is_running = False
                 goal_reached = True

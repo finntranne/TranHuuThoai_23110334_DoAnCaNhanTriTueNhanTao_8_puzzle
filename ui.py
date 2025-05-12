@@ -597,8 +597,8 @@ class PuzzleApp:
             return
         for i in range(3):
             for j in range(3):
-                # self.start_entries[i][j].delete(0, tk.END)
-                # self.start_entries[i][j].config(highlightbackground="#000000")
+                self.start_entries[i][j].delete(0, tk.END)
+                self.start_entries[i][j].config(highlightbackground="#000000")
                 self.step_cells[i][j].config(text="")
                 self.step_cells[i][j].config(bg="white")
         self.observed_positions = []
