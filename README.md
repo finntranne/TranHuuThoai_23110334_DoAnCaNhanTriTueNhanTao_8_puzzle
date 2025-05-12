@@ -162,7 +162,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
 |-----------|-----------------------|----------------|
-| <img src="images/execution_time_optimization_based.png" width="300" alt="Time"> | <img src="images/visited_states_optimization_based.png" width="300" alt="Visited States"> | <img src="images/memory_usage_optimization_based.png" width="300" alt="Memory"> |
+| <img src="images/execution_time_optimization-based.png" width="300" alt="Time"> | <img src="images/visited_states_optimization-based.png" width="300" alt="Visited States"> | <img src="images/memory_usage_optimization-based.png" width="300" alt="Memory"> |
 
 #### Nhận xét về hiệu suất
 - **Q-Learning**: Tốn thời gian để huấn luyện do cần nhiều tập học, nhưng có thể áp dụng cho các bài toán mà không cần mô hình rõ ràng. Phù hợp hơn cho các bài toán lớn hoặc không xác định.
