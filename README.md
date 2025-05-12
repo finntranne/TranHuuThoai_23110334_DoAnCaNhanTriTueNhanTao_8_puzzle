@@ -168,8 +168,8 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 ### 2.6. Học tăng cường: Q-Learning
 
 #### Thành phần chính của bài toán tìm kiếm
--**Giá trị Q (Q-Value) hoặc Giá trị Hành độngn**: biểu thị phần thưởng kỳ vọng dài hạn khi thực hiện hành động a ở trạng thái s, sau đó tiếp tục theo một chính sách tối ưu. Đây là thước đo chất lượng của cặp trạng thái-hành động.
--**Phần thưởng (Reward)**:  Phần thưởng R là giá trị số mà tác nhân nhận được sau khi thực hiện hành động a ở trạng thái s, phản ánh mức độ mong muốn của hành động đó.
+- **Giá trị Q (Q-Value) hoặc Giá trị Hành độngn**: biểu thị phần thưởng kỳ vọng dài hạn khi thực hiện hành động a ở trạng thái s, sau đó tiếp tục theo một chính sách tối ưu. Đây là thước đo chất lượng của cặp trạng thái-hành động.
+- **Phần thưởng (Reward)**: Phần thưởng R là giá trị số mà tác nhân nhận được sau khi thực hiện hành động a ở trạng thái s, phản ánh mức độ mong muốn của hành động đó.
 - **Tập phim (Episode)**: Một tập phim là một chuỗi các trạng thái, hành động, và phần thưởng, bắt đầu từ trạng thái ban đầu và kết thúc khi đạt trạng thái cuối (terminal state) hoặc sau một số bước tối đa.
 - **Chênh lệch thời gian (Temporal Difference - TD) hoặc Cập nhật Q**: Giá trị Q được cập nhật dựa trên công thức TD, kết hợp phần thưởng hiện tại và giá trị Q ước lượng của trạng thái tiếp theo
 - **Chính sách tham lam ϵ (Epsilon-Greedy Policy)**: Chính sách tham lam cân bằng giữa khai thác (Chọn hành động có giá trị Q cao nhất) và khám phá (Chọn hành động ngẫu nhiên)
