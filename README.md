@@ -111,8 +111,8 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **NoObservationSearch** | <img src="images/noobservationsearch.gif" width="500" alt="No Observation"> |
-| **PartialObservationSearch** | <img src="images/partialobservationsearch.gif" width="500" alt="Partial Observation"> |
+| **NoObservationSearch** | <img src="images/noobservation.gif" width="500" alt="No Observation"> |
+| **PartialObservationSearch** | <img src="images/partialobservation.gif" width="500" alt="Partial Observation"> |
 
 #### Hình ảnh so sánh hiệu suất
 - Do yêu cầu loại bỏ so sánh nhóm Belief-State Search, hiệu suất của các thuật toán này không được đánh giá trong dự án hiện tại.
@@ -133,7 +133,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 | Thuật toán | GIF |
 |------------|-----|
 | **Backtracking** | <img src="images/backtracking.gif" width="500" alt="Backtracking"> |
-| **GenerateAndTest** | <img src="images/generateandtest.gif" width="500" alt="GenerateAndTest"> |
+| **GenerateAndTest** | <img src="images/generate_test.gif" width="500" alt="GenerateAndTest"> |
 | **AC3** | <img src="images/ac3.gif" width="500" alt="AC3"> |
 
 #### Hình ảnh so sánh hiệu suất
@@ -157,7 +157,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **Q-Learning** | <img src="images/qlearning.gif" width="500" alt="Q-Learning"> |
+| **Q-Learning** | <img src="images/q_learning.gif" width="500" alt="Q-Learning"> |
 
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
