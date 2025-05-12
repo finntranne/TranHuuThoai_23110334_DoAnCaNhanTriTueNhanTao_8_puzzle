@@ -26,10 +26,10 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **BFS** | <img src="images/bfs.gif" width="700" alt="BFS"> |
-| **DFS** | <img src="images/dfs.gif" width="700" alt="DFS"> |
-| **UCS** | <img src="images/ucs.gif" width="700" alt="UCS"> |
-| **IDDFS** | <img src="images/iddfs.gif" width="700" alt="IDDFS"> |
+| **BFS** | <img src="images/bfs.gif" width="500" alt="BFS"> |
+| **DFS** | <img src="images/dfs.gif" width="500" alt="DFS"> |
+| **UCS** | <img src="images/ucs.gif" width="500" alt="UCS"> |
+| **IDDFS** | <img src="images/iddfs.gif" width="500" alt="IDDFS"> |
 
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
@@ -57,9 +57,9 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **GREEDY** | <img src="images/greedy.gif" width="700" alt="GREEDY"> |
-| **A*** | <img src="images/astar.gif" width="700" alt="A*"> |
-| **IDA*** | <img src="images/idastar.gif" width="700" alt="IDA*"> |
+| **GREEDY** | <img src="images/greedy.gif" width="500" alt="GREEDY"> |
+| **A*** | <img src="images/astar.gif" width="500" alt="A*"> |
+| **IDA*** | <img src="images/idastar.gif" width="500" alt="IDA*"> |
 
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
@@ -86,12 +86,12 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **SimpleHillClimbing** | <img src="images/simplehillclimbing.gif" width="700" alt="Simple HC"> |
-| **SteepestHillClimbing** | <img src="images/steepesthillclimbing.gif" width="700" alt="Steepest HC"> |
-| **StochasticHillClimbing** | <img src="images/stochastichillclimbing.gif" width="700" alt="Stochastic HC"> |
-| **SimulatedAnnealing** | <img src="images/simulatedannealing.gif" width="700" alt="Simulated Annealing"> |
-| **BeamSearch** | <img src="images/beamsearch.gif" width="700" alt="Beam Search"> |
-| **GeneticAlgorithm** | <img src="images/geneticalgorithm.gif" width="700" alt="Genetic Algorithm"> |
+| **SimpleHillClimbing** | <img src="images/simplehillclimbing.gif" width="500" alt="Simple HC"> |
+| **SteepestHillClimbing** | <img src="images/steepesthillclimbing.gif" width="500" alt="Steepest HC"> |
+| **StochasticHillClimbing** | <img src="images/stochastichillclimbing.gif" width="500" alt="Stochastic HC"> |
+| **SimulatedAnnealing** | <img src="images/simulatedannealing.gif" width="500" alt="Simulated Annealing"> |
+| **BeamSearch** | <img src="images/beamsearch.gif" width="500" alt="Beam Search"> |
+| **GeneticAlgorithm** | <img src="images/geneticalgorithm.gif" width="500" alt="Genetic Algorithm"> |
 
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
@@ -122,9 +122,9 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **NoObservationSearch** | <img src="images/noobservation.gif" width="700" alt="No Observation"> |
-| **PartialObservationSearch** | <img src="images/partialobservation.gif" width="700" alt="Partial Observation"> |
-| **And_OrSearch** | <img src="images/and_or.gif" width="700" alt="And_Or Search"> |
+| **NoObservationSearch** | <img src="images/noobservation.gif" width="500" alt="No Observation"> |
+| **PartialObservationSearch** | <img src="images/partialobservation.gif" width="500" alt="Partial Observation"> |
+| **And_OrSearch** | <img src="images/and_or.gif" width="500" alt="And_Or Search"> |
 
 #### Hình ảnh so sánh hiệu suất
 - Do yêu cầu loại bỏ so sánh nhóm Belief-State Search, hiệu suất của các thuật toán này không được đánh giá trong dự án hiện tại.
@@ -149,9 +149,9 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **Backtracking** | <img src="images/backtracking.gif" width="700" alt="Backtracking"> |
-| **GenerateAndTest** | <img src="images/generate_test.gif" width="700" alt="GenerateAndTest"> |
-| **AC3** | <img src="images/ac3.gif" width="700" alt="AC3"> |
+| **Backtracking** | <img src="images/backtracking.gif" width="500" alt="Backtracking"> |
+| **GenerateAndTest** | <img src="images/generate_test.gif" width="500" alt="GenerateAndTest"> |
+| **AC3** | <img src="images/ac3.gif" width="500" alt="AC3"> |
 
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
@@ -177,7 +177,7 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 #### Hình ảnh GIF minh họa
 | Thuật toán | GIF |
 |------------|-----|
-| **Q-Learning** | <img src="images/q_learning.gif" width="700" alt="Q-Learning"> |
+| **Q-Learning** | <img src="images/q_learning.gif" width="500" alt="Q-Learning"> |
 
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
