@@ -113,6 +113,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 |------------|-----|
 | **NoObservationSearch** | <img src="images/noobservation.gif" width="500" alt="No Observation"> |
 | **PartialObservationSearch** | <img src="images/partialobservation.gif" width="500" alt="Partial Observation"> |
+| **And_OrSearch** | <img src="images/and_or.gif" width="500" alt="And_Or Search"> |
 
 #### Hình ảnh so sánh hiệu suất
 - Do yêu cầu loại bỏ so sánh nhóm Belief-State Search, hiệu suất của các thuật toán này không được đánh giá trong dự án hiện tại.
@@ -120,7 +121,7 @@ Chương trình cung cấp giao diện người dùng để nhập trạng thái
 #### Nhận xét về hiệu suất
 - **NoObservationSearch**: Phù hợp khi không có thông tin quan sát, nhưng tốn tài nguyên do phải xem xét nhiều trạng thái tín ngưỡng.
 - **PartialObservationSearch**: Hiệu quả hơn khi có thông tin quan sát, nhưng vẫn phức tạp hơn các thuật toán thông thường.
-
+- **And_OrSearch**:
 ---
 
 ### 2.5. Các thuật toán Tìm kiếm ràng buộc: Backtracking, GenerateAndTest, AC3
