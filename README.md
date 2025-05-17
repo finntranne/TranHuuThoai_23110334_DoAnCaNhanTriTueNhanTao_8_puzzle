@@ -91,7 +91,7 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 | **StochasticHillClimbing** | <img src="images/stochastichillclimbing.gif" width="500" alt="Stochastic HC"> |
 | **SimulatedAnnealing** | <img src="images/simulatedannealing.gif" width="500" alt="Simulated Annealing"> |
 | **BeamSearch** | <img src="images/beamsearch.gif" width="500" alt="Beam Search"> |
-| **GeneticAlgorithm** | <img src="images/geneticalgorithm.gif" width="500" alt="Genetic Algorithm"> |
+| **GeneticAlgorithm** | <img src="images/genetic.gif" width="500" alt="Genetic Algorithm"> |
 
 #### Hình ảnh so sánh hiệu suất
 | Thời gian | Số trạng thái đã thăm | Bộ nhớ sử dụng |
@@ -108,7 +108,7 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 
 ---
 
-### 2.4. Các thuật toán Tìm kiếm trong môi trường phức tạp, không xác định: NoObservationSearch, PartialObservationSearch
+### 2.4. Các thuật toán Tìm kiếm trong môi trường phức tạp, không xác định: NoObservationSearch, PartialObservationSearch, And_OrSearch
 
 #### Thành phần chính của bài toán tìm kiếm
 -**Không gian niềm tin**:  Là tập hợp tất cả các trạng thái vật lý khả dĩ mà tác nhân tin là có thể đang xảy ra.
@@ -191,12 +191,12 @@ Xây dựng một chương trình giải bài toán **8-Puzzle** sử dụng nhi
 
 ## 3. Kết luận
 Dự án đã đạt được các kết quả sau:
-- **Triển khai thành công 18 thuật toán** thuộc 6 nhóm khác nhau áp dụng cho bài toán 8-Puzzle.
+- **Triển khai thành công 20 thuật toán** thuộc 6 nhóm khác nhau áp dụng cho bài toán 8-Puzzle.
 - **Xây dựng giao diện người dùng** bằng Tkinter + Pygame, cho phép nhập trạng thái ban đầu và đích, chọn thuật toán, điều chỉnh tốc độ hiển thị, và xem quá trình giải chi tiết.
 - **Đánh giá hiệu suất** của các thuật toán dựa trên thời gian thực thi, số trạng thái đã thăm, và bộ nhớ sử dụng.
 - **Học được từ dự án**: Hiểu sâu hơn về cách áp dụng các thuật toán AI vào bài toán thực tế, kỹ năng lập trình Python.
--**Khó khăn trong việc thực hiện**: Một số thuật toán rất trừu tượng, khó hiểu nên có thể mô phỏng không đúng ý tưởng một số thuật toán; Đa số là tài liệu tiếng anh.
--**Hướng phát triển**: Trực quan hóa 1 cách rõ ràng ý tưởng cảu từng giải thuật, áp dụng để làm game cho đồ án nhóm cuối kỳ.
+- **Khó khăn trong việc thực hiện**: Một số thuật toán rất trừu tượng, khó hiểu nên có thể mô phỏng không đúng ý tưởng một số thuật toán; Đa số là tài liệu tiếng anh.
+- **Hướng phát triển**: Trực quan hóa 1 cách rõ ràng ý tưởng cảu từng giải thuật, áp dụng để làm game cho đồ án nhóm cuối kỳ.
 
 ---
 
